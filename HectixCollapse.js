@@ -1,8 +1,8 @@
    (function($) {
-       $.fn.myCollapse = function(options) {
+       $.fn.HectixCollapse = function(options) {
 
            var settings = $.extend({ //
-               visibleProducers: 1,   //
+               visibleElements: 1,   //
                animationSpeed: 400,  // Settings
                itemsPerClick: 1   //
            }, options);
