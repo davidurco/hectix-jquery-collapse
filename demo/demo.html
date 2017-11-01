@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Demo</title>
+</head>
+<body>
+<section class="producers" id="5">
+    <h3>Výrobcovia a katalógy</h3>
+    <div class="container" id="producers">
+        <div class="producer">
+            <h1>1</h1>
+        </div>
+        <div class="producer">
+            <h1>2</h1>
+        </div>
+        <div class="producer">
+            <h1>3</h1>
+        </div>
+    </div>
+    <a href="#collapseProducers" class="button main-button collapse-button collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseProducers"><span class="button-text"></span><span class="left-to-show"></span><i class="glyphicon glyphicon-chevron-down"></i></a>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../HectixCollapse.js"></script>
+<script>
+
+    $("section.producers").HectixCollapse({
+        visible_producers: 1,
+        animation_speed: 100,
+        items_per_click: 1,
+        show_counter: true,
+        button_text: "remaining:"
+    });
+
+</script>
+
+</body>
+</html>
