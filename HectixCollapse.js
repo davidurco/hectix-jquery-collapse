@@ -2,25 +2,24 @@
     $.fn.HectixCollapse = function(options) {
 
         var settings = $.extend({
-            visible_producers: 1,
-            animation_speed: 400,
+            initial_items: 1,
+            slide_speed: 400,
             items_per_click: 1,
             show_counter: false,
             button_text: "Next"
         }, options);
 
-
-        var $myClass = $(this).find('.producer');
+        var collapse_item = $(this).find('.collapse-item');
         var $obj = $(this);
 
-        var items = function($duration, $test, $type) {
-            $test.each(function(index) {
-                if ($type == 'myClass') {
-                    if (index > settings.visible_producers - 1) {
+        var items = function($duration, $collapse_item, $type) {
+            $collapse_item.each(function(index) {
+                if ($type === 'initial') {
+                    if (index > settings.initial_items - 1) {
                         $(this).slideToggle($duration);
                     }
                 }
-                if ($type == 'myHidden') {
+                if ($type === 'progress') {
                     if (index < settings.items_per_click) {
                         $(this).slideToggle($duration);
                     }
@@ -28,25 +27,25 @@
             });
         };
 
-        items(0, $myClass, 'myClass');
+        items(0, collapse_item, 'initial');
 
-        var $myHidden = $obj.find('.producer').filter(":hidden");
+        var hidden_item = $obj.find('.collapse-item').filter(":hidden");
         if (settings.show_counter === true) {
-            $(".left-to-show").html($myHidden.length);
+            $(this).find(".counter").html(hidden_item.length);
         }
 
-        $(".button-text").html(settings.button_text);
+        $(this).find(".button-text").html(settings.button_text);
 
-        $(this).find('a[role="button"]').on("click", function() {
-            var $myHidden = $obj.find('.producer').filter(":hidden");
+        $(this).find('a.collapse-button').on("click", function() {
+            var hidden_item = $obj.find('.collapse-item').filter(":hidden");
             if (settings.show_counter === true) {
-                if ($myHidden.length === 0) {
-                    $(".left-to-show").html($myHidden.length);
+                if (hidden_item.length === 0) {
+                    $(this).find(".counter").html(hidden_item.length);
                 } else {
-                    $(".left-to-show").html($myHidden.length - 1);
+                    $(this).find(".counter").html(hidden_item.length - 1);
                 }
             }
-            items(settings.animation_speed, $myHidden, 'myHidden');
+            items(settings.slide_speed, hidden_item, 'progress');
         });
         return this;
     };

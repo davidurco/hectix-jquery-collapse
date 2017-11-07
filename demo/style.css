@@ -1,3 +1,49 @@
-h1  {
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: left;
+}
+
+a {
+    color: black;
+    font-weight: 500;
+}
+
+.demo2 {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 200;
+}
+
+p {
     margin: 0;
+    text-align: left !important;
+    display: inline-block;
+}
+
+.collapse-button {
+    border: 1px solid red;
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    width: 150px;
+}
+
+.collapse-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.collapse-item {
+    border-bottom: 1px solid gray;
+    padding: 30px;
+}
+
+.collapse-item a {
+    text-align: right;
+    float: right;
 }
