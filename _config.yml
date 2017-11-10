@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+# Setup
+title:        Hectix's Collapse
+tagline:      A responsive and lightweight collapse plugin.
+baseurl:      ""
+paginate:     1
+
+# About/contact
+author:
+  name:       Dávid Ďurčo
+  url:        https://github.com/Hectix
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
