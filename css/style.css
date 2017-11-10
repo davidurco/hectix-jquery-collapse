@@ -2,6 +2,10 @@ body {
   font-family: 'Muli', sans-serif;
   text-align: left; }
 
+section .demo a:not(.collapse-button) {
+  color: #155799; }
+section .demo a.collapse-button {
+  color: black; }
 section .demo h1 {
   font-size: 38px;
   font-weight: 200; }
@@ -10,13 +14,13 @@ section .demo p {
   text-align: left !important;
   display: inline-block; }
 section .demo .collapse-button {
-  border: 1px solid red;
+  border: 1px solid #155799;
   padding: 10px 25px;
   border-radius: 50px;
   display: block;
   text-align: center;
   margin: 50px auto;
-  width: 150px; }
+  width: 160px; }
 section .demo .collapse-button:hover {
   text-decoration: underline;
   cursor: pointer; }
@@ -26,5 +30,8 @@ section .demo .collapse-item {
 section .demo .collapse-item a {
   text-align: right;
   float: right; }
+
+.cs-hidden {
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */

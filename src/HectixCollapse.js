@@ -28,13 +28,13 @@
         };
 
         items(0, collapse_item, 'initial');
-
+        $(this).removeClass("cs-hidden");
         var hiddenItem = $obj.find('.collapse-item').filter(":hidden");
         if (settings.showCounter === true) {
             $(this).find(".counter").html(hiddenItem.length);
         }
 
-        $(this).find(".button-text").html(settings.button_text);
+        $(this).find(".button-text").html(settings.buttonText);
 
         $(this).find('a.collapse-button').on("click", function() {
             var hiddenItem = $obj.find('.collapse-item').filter(":hidden");
