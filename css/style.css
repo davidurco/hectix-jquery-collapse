@@ -1,37 +1,66 @@
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left; }
 
-section .demo a:not(.collapse-button) {
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 20px; }
+
+.installation h3:first-of-type {
+  margin-top: 20px; }
+
+section .hectixCollapse a:not(.collapse-button),
+section .hectixCollapse1 a:not(.collapse-button) {
   color: #155799; }
-section .demo a.collapse-button {
+section .hectixCollapse a.collapse-button,
+section .hectixCollapse1 a.collapse-button {
   color: black; }
-section .demo h1 {
+section .hectixCollapse h1,
+section .hectixCollapse1 h1 {
   font-size: 38px;
   font-weight: 200; }
-section .demo p {
+section .hectixCollapse p,
+section .hectixCollapse1 p {
   margin: 0;
   text-align: left !important;
   display: inline-block; }
-section .demo .collapse-button {
+section .hectixCollapse .collapse-button,
+section .hectixCollapse1 .collapse-button {
   border: 1px solid #155799;
   padding: 10px 25px;
   border-radius: 50px;
   display: block;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px auto 30px;
   width: 160px; }
-section .demo .collapse-button:hover {
+section .hectixCollapse .collapse-button:hover,
+section .hectixCollapse1 .collapse-button:hover {
   text-decoration: underline;
   cursor: pointer; }
-section .demo .collapse-item {
+section .hectixCollapse .collapse-item,
+section .hectixCollapse1 .collapse-item {
   border-bottom: 1px solid gray;
   padding: 30px; }
-section .demo .collapse-item a {
+section .hectixCollapse .collapse-item a,
+section .hectixCollapse1 .collapse-item a {
   text-align: right;
   float: right; }
 
 .cs-hidden {
   display: none !important; }
+
+.text-center {
+  text-align: center; }
+
+.bold {
+  font-weight: 700; }
+
+table {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
