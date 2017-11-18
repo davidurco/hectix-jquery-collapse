@@ -4,32 +4,154 @@ title: {{ site.name }}
 ---
 
 <div id="home">
-  <section class="demo cs-hidden">
-    <div class="collapse-item">
-      <p>This is collapse item</p>
-      <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+    <section class="hectixCollapse cs-hidden">
+        <div class="collapse-item">
+            <p>This is collapse item</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>You can style and structure it exactly how you want it</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>... it means you can add here any html element.</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>:)</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <a class="collapse-button" role="button"><span class="button-text"></span><span class="counter"></span><i class="glyphicon glyphicon-chevron-down"></i></a>
+    </section>
+    <pre class="prettyprint lang-js">
+$("section.hectixCollapse").HectixCollapse({
+    initialItems: 1,
+    itemPerClick: 1,
+    slideSpeed: 300,
+    buttonText: "Remaning: ",
+    showCounter: true,
+});
+</pre>
+
+
+    <section class="installation">
+        <h3>How to use hectixCollapse?</h3>
+        <hr>
+        <p>You can install hectixCollapse using package managers or <a href="">download it</a> directly.</p>
+        <h4>npm</h4>
+        <div class="highlight highlight-source-yaml"><pre>npm install hectixcollapse</pre></div>
+        <p>or</p>
+        <h4>bower</h4>
+        <div class="highlight highlight-source-yaml"><pre>bower install hectixcollapse</pre></div>
+        <h4>Usage</h4>
+        <p>include jQuery and hectixCollapse script right before end of body tag.</p>
+<pre class="prettyprint lang-html">
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">&lt;/script&gt;
+&lt;script src="dist/hectixCollapse.min.js">&lt;/script&gt;
+</pre>
+        <h5>HTML Structure</h5>
+<pre class="prettyprint lang-html">
+&lt;section class="hectixCollapse cs-hidden">
+    &lt;div class="collapse-item">
+        &lt;h1>First collapse item&lt;/h1>
+        &lt;p>This is first collapse item&lt;/p>
+    &lt;/div>
+    &lt;div class="collapse-item">
+        &lt;h1>Second collapse item&lt;/h1>
+        &lt;p>This is second collapse item&lt;/p>
+    &lt;/div>
+    ...
+    &lt;a class="collapse-button">&lt;span class="button-text">&lt;/span>&lt;span class="counter">&lt;/span>&lt;/a>
+&lt;/section>
+</pre>
+        <blockquote>
+            <p>Use class <strong>.cs-hidden</strong> to prevent displaying collapse before execution.</p>
+        </blockquote>
+
+        <h5>Call hectixCollapse</h5>
+        <pre class="prettyprint lang-js">
+$("section.hectixCollapse").hectixCollapse({
+    initialItems: 1,
+    itemPerClick: 2,
+    slideSpeed: 600,
+    buttonText: "Next",
+    showCounter: false
+});
+</pre>
+    </section>
+    <h5 class="text-center bold">Result</h5>
+    <section class="hectixCollapse1 cs-hidden">
+        <div class="collapse-item">
+            <p>This is collapse item</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>You can style and structure it exactly how you want it</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>... it means you can add here any html element.</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>:)</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <div class="collapse-item">
+            <p>:)</p>
+            <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
+        </div>
+        <a class="collapse-button" role="button"><span class="button-text"></span><span class="counter"></span><i class="glyphicon glyphicon-chevron-down"></i></a>
+    </section>
+
+    <h4>Settings</h4>
+    <table>
+        <thead>
+        <tr>
+            <th style="text-align: left">Name</th>
+            <th style="text-align: left">Expected</th>
+            <th style="text-align: left">Default</th>
+            <th style="text-align: left">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="text-align: left">initialItems</td>
+            <td style="text-align: left">number</td>
+            <td style="text-align: left">1</td>
+            <td style="text-align: left">Numbers of elements shown on start of plugin</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">itemsPerClick</td>
+            <td style="text-align: left">number</td>
+            <td style="text-align: left">1</td>
+            <td style="text-align: left">Items slided per click on button</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">slideSpeed</td>
+            <td style="text-align: left">number</td>
+            <td style="text-align: left">300</td>
+            <td style="text-align: left">Speed of slide animation</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">Numbers of elements shown on start of plugin</td>
+            <td style="text-align: left">Items slided per click on button</td>
+            <td style="text-align: left">Speed of slide animation</td>
+            <td style="text-align: left">Show counter in a collapse button</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">Numbers of elements shown on start of plugin</td>
+            <td style="text-align: left">Items slided per click on button</td>
+            <td style="text-align: left">Speed of slide animation</td>
+            <td style="text-align: left">Text displayed in a collapse button</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>No CSS needed</h3>
+    <blockquote>
+        <p>Hectix's Collapse doesn't need any CSS because it perfectly fits to your design (css).</p>
+        <p>Remember! You can structure and style div<strong>.collapse-item</strong> as you like it.</p>
+    </blockquote>
+
     </div>
-    <div class="collapse-item">
-      <p>You can style and structure it exactly how you want it</p>
-      <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
-    </div>
-    <div class="collapse-item">
-      <p>... it means you can add here any html element.</p>
-      <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
-    </div>
-    <div class="collapse-item">
-      <p>:)</p>
-      <a href="https://github.com/Hectix/Hectix-Collapse">Docs</a>
-    </div>
-    <a class="collapse-button" role="button"><span class="button-text"></span><span class="counter"></span><i class="glyphicon glyphicon-chevron-down"></i></a>
-  </section>
-  <pre class="prettyprint linenums">
-   $("section.demo").HectixCollapse({
-        initialItems: 1,
-        slideSpeed: 300,
-        itemPerClick: 1,
-        buttonText: "Remaning: ",
-        showCounter: true
-    });
-  </pre>
-</div>
