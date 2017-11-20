@@ -1,0 +1,31 @@
+{
+  "name": "hectixcollapse",
+  "description": "Hectix's Collapse is a lightweight, jQuery dependent plugin for customizable collapses.",
+  "main": "dist/hectixCollapse.js",
+  "authors": [
+    "Dávid Ďurčo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "collapse",
+    "hectix",
+    "hectix-collapse",
+    "hectixCollapse",
+    "plugin",
+    "jquery",
+    "reponsive"
+  ],
+  "ignore": [
+ 	 "demo",
+	 "test",
+	 "**/.*",
+	 "contributing.md",
+	 "Gruntfile.js",
+	 "README.md"
+	],
+  "devDependencies": {
+	 "qunit": "~1.12.0",
+	 "jquery": "~1.7.0"
+  },
+  "homepage": "https://github.com/Hectix/Hectix-Collapse"
+}

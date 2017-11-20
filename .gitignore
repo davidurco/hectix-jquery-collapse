@@ -1,3 +1,5 @@
 .gitignore
 .idea/
 Hectix-Collapse.iml
+bower_components
+node_modules

@@ -1,0 +1,39 @@
+{
+  "name": "hectixcollapse",
+  "version": "1.0.0",
+  "description": "Hectix's Collapse is a lightweight, jQuery dependent plugin for customizable collapses.",
+  "main": "dist/hectixCollapse.js",
+  "homepage": "https://hectix.github.io/Hectix-Collapse/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hectix/Hectix-Collapse.git"
+  },
+  "keywords": [
+    "collapse",
+    "hectix",
+    "hectix-collapse",
+    "hectixCollapse",
+    "plugin",
+    "jquery",
+    "reponsive"
+  ],
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "Dávid Ďurčo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hectix/Hectix-Collapse/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-karma": "^2.0.0",
+    "karma": "^1.7.1",
+    "qunit": "^2.4.1"
+  }
+}
