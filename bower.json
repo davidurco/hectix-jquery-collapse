@@ -16,12 +16,9 @@
     "reponsive"
   ],
   "ignore": [
- 	 "demo",
-	 "test",
-	 "**/.*",
-	 "contributing.md",
-	 "Gruntfile.js",
-	 "README.md"
+	  "node_modules",
+	  "bower_components",
+	  ".gitignore"
 	],
   "devDependencies": {
 	 "jquery": "~1.7.0"

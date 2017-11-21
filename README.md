@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/Hectix/Hectix-Collapse.svg?style=social)](https://github.com/Hectix/Hectix-Collapse/blob/master/LICENSE)
-
+![build](https://travis-ci.org/Hectix/Hectix-Collapse.svg?branch=master)
 # Hectix's Collapse
 
 [Hectix's Collapse][1] is a lightweight, jQuery dependent plugin for customizable collapses.
