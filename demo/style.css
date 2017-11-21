@@ -1,3 +1,37 @@
-h1  {
-    margin: 0;
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+section.hectixCollapse a:not(.collapse-button){
+	color: #155799; }
+section.hectixCollapse a.collapse-button{
+	color: black; }
+section.hectixCollapse h1{
+	font-size: 38px;
+	font-weight: 200; }
+section.hectixCollapse p{
+	margin: 0;
+	text-align: left !important;
+	display: inline-block; }
+section.hectixCollapse .collapse-button{
+	border: 1px solid #155799;
+	padding: 10px 25px;
+	border-radius: 50px;
+	display: block;
+	text-align: center;
+	margin: 50px auto 30px;
+	width: 160px; }
+section.hectixCollapse .collapse-button:hover{
+	text-decoration: underline;
+	cursor: pointer; }
+section.hectixCollapse .collapse-item{
+	border-bottom: 1px solid gray;
+	padding: 30px; }
+section.hectixCollapse .collapse-item a {
+	text-align: right;
+	float: right; }
+
+section.hectixCollapse {
+	max-width: 50%;
+	margin: 0 auto;
 }
