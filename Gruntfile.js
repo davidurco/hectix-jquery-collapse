@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
 			dist: {
 				src: [ "dist/hectixcollapse.js" ],
 				dest: "dist/hectixcollapse.min.js"
-			},
+			}
 		},
 
 		// karma test runner
@@ -38,14 +38,14 @@ module.exports = function( grunt ) {
 				configFile: "karma.conf.js",
 				background: true,
 				singleRun: false,
-				browsers: [ "PhantomJS", "Firefox" ]
+				browsers: [ "Chrome" ]
 			},
 
 			//continuous integration mode: run tests once in PhantomJS browser.
 			travis: {
 				configFile: "karma.conf.js",
 				singleRun: true,
-				browsers: [ "PhantomJS" ]
+				browsers: [ "Chrome" ]
 			}
 		},
 
@@ -69,5 +69,5 @@ module.exports = function( grunt ) {
 	grunt.registerTask( "travis", [ "jshint", "karma:travis" ] );
 	grunt.registerTask( "lint", [ "jshint", "jscs" ] );
 	grunt.registerTask( "build", [ "concat", "uglify" ] );
-	grunt.registerTask( "default", [ "jshint", "build", "karma:unit:run" ] );
+	grunt.registerTask( "default", [ "jshint", "build", "karma:unit" ] );
 };

@@ -1,16 +1,16 @@
 module.exports = function( config ) {
 
 	config.set( {
-		plugins: [
-			require( 'qunit' )
-		],
+		port: 8080,
+		runnerPort: 9010,
 		files: [
-			"bower_components/jquery/dist/jquery.js",
+			"bower_components/jquery/jquery.min.js",
 			"dist/hectixcollapse.min.js",
 			"test/setup.js",
 			"test/spec/*"
 		],
 		frameworks: [ "qunit" ],
-		autoWatch: true
+		autoWatch: true,
+		browsers: [ "Chrome" ]
 	} );
 };

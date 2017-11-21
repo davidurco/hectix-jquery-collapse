@@ -13,22 +13,24 @@
 		var $obj = $( this );
 		var collapseItem = $obj.find( ".collapse-item" );
 
-		var items = function( $duration, $collapseItem, $type ) {
-			$collapseItem.each( function( index ) {
-				if ( $type === "initial" ) {
-					if ( index > settings.initialItems - 1 ) {
-						$( this ).slideToggle( $duration );
+		var object = {
+			items: function( $duration, $collapseItem, $type ) {
+				$collapseItem.each( function( index ) {
+					if ( $type === "initial" ) {
+						if ( index > settings.initialItems - 1 ) {
+							$( this ).slideToggle( $duration );
+						}
 					}
-				}
-				if ( $type === "progress" ) {
-					if ( index < settings.itemsPerClick ) {
-						$( this ).slideToggle( $duration );
+					if ( $type === "progress" ) {
+						if ( index < settings.itemsPerClick ) {
+							$( this ).slideToggle( $duration );
+						}
 					}
-				}
-			} );
+				} );
+			}
 		};
 
-		items( 0, collapseItem, "initial" );
+		object.items( 0, collapseItem, "initial" );
 		$obj.removeClass( "cs-hidden" );
 		var hiddenItem = $obj.find( ".collapse-item" ).filter( ":hidden" );
 
@@ -46,7 +48,7 @@
 					$obj.find( ".counter" ).html( hiddenItem.length - 1 );
 				}
 			}
-			items( settings.slideSpeed, hiddenItem, "progress" );
+			object.items( settings.slideSpeed, hiddenItem, "progress" );
 		} );
 		return this;
 	};

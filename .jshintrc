@@ -6,8 +6,8 @@
   "expr": true,
   "immed": true,
   "noarg": true,
+  "node": true,
   "onevar": true,
   "quotmark": "double",
-  "unused": true,
-  "node": true
+  "unused": true
 }
