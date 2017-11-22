@@ -1,5 +1,8 @@
-[![GitHub license](https://img.shields.io/github/license/Hectix/Hectix-Collapse.svg?style=social)](https://github.com/Hectix/Hectix-Collapse/blob/master/LICENSE)
+![licence](https://img.shields.io/github/license/Hectix/Hectix-Collapse.svg?style=flat-square)
 ![build](https://travis-ci.org/Hectix/Hectix-Collapse.svg?branch=master)
+![bower](https://img.shields.io/bower/v/hectixcollapse.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/hectixcollapse.svg?style=flat-square)
+
 # Hectix's Collapse
 
 [Hectix's Collapse][1] is a lightweight, jQuery dependent plugin for customizable collapses.
@@ -21,7 +24,7 @@ or
 bower install hectixcollapse
 ```
 
-###Use it!
+### Use it!
 
 include jQuery and hectixCollapse script right before end of body tag.
 
